@@ -14,11 +14,13 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+### Quick introduction
+
+I'm an aspiring front-end developper which means that this project is probably not the best learning material, yet i'll do my best to explain part of my process, what i did and for what reasons.
+Also, on a separate subject, english isn't my first language so please excuse me for any mispellings or grammatical errors whatsoever.
 
 ### The challenge
 
@@ -40,13 +42,13 @@ Users should be able to:
 
 ### Analysis
 
-- Two different designs, a mobile and a desktop one, so the page would be responsive.
-- Card can be divided in three main parts: photo, text (title &sol; paragraph) &sol; metrics
+- Two different designs, a mobile and a desktop one, so the page will be responsive.
+- Card can be divided in three main parts: photo, text (title &sol; paragraph) &amp; metrics
 - Can use CSS Grid here:
   - One column and three rows for the mobile design
-  - Two columns and three rows for the desktop design
+  - Two columns and two rows for the desktop design
 - At one point, use _media queries_ to change column numbers and switch from mobile design to desktop one.
-- Will start by mobile design because it's easier to add complexity to a design than to remove it (mobile design have less space to cover and less elements to display so it's ofter better to start mobile first). Plus nowadays, most people use the web through mobile devices to it makes senses to focus the experience on the many instead of the few.
+- Will start by mobile design because it's easier to add complexity to a design than to remove it (mobile design have less space to cover and less elements to display so it's often better to start mobile first). Plus nowadays, most people use the web through mobile devices so it makes senses to focus the experience on the many instead of the few.
 - Title seems to be bigger in desktop design but the other entries don't seem to change size.
 - There's two images, one for the mobile design and the other for the desktop design. Will use the _picture_ and _source_ elements to make the switch.
 - Both images are black &sol; white so we'll use _linear-gradient()_ to add the purplish color on top of it.
