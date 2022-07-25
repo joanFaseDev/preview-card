@@ -19,7 +19,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Quick introduction
 
-I'm an aspiring front-end developper which means that this project is probably not the best learning material, yet i'll do my best to explain part of my process, what i did and for what reasons.
+I'm an aspiring front-end developper which means that this project is probably not the best learning material, yet i'll do my best to explain parts of my process, what i did and for what reasons.
 Also, on a separate subject, english isn't my first language so please excuse me for any mispellings or grammatical errors whatsoever.
 
 ### The challenge
