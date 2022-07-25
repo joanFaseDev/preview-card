@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -40,10 +40,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/joanFaseDev/preview-card)
+- Live Site URL: [Project hosted throught Vercel](https://preview-card-phi.vercel.app/)
 
 ## My process
+
+### Analysis
+
+- Two different designs, a mobile and a desktop one, so the page would be responsive.
+- Card can be divided in three main parts: photo, text (title &sol; paragraph) &sol; metrics
+- Can use CSS Grid here:
+  - One column and three rows for the mobile design
+  - Two columns and three rows for the desktop design
+- At one point, use _media queries_ to change column numbers and switch from mobile design to desktop one.
+- Will start by mobile design because it's easier to add complexity to a design than to remove it (mobile design have less space to cover and less elements to display so it's ofter better to start mobile first). Plus nowadays, most people use the web through mobile devices to it makes senses to focus the experience on the many instead of the few.
+- Title seems to be bigger in desktop design but the other entries don't seem to change size.
+- There's two images, one for the mobile design and the other for the desktop design. Will use the _picture_ and _source_ elements to make the switch.
+- Both images are black &sol; white so we'll use _linear-gradient()_ to add the purplish color on top of it.
 
 ### Built with
 
@@ -51,12 +64,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -67,15 +74,17 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log("🎉");
+};
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -90,8 +99,11 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN article on the _picture_ HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This helped me make the switch between the image from the mobile design and the one from the desktop design.
+
+- [MDN article on the CSS _filter_ property](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) - This helped me partially reproduce the purplish filter on the card's photo.
+
+- [CSS Image Overlay](https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio) - An article by Ellen Macpherson on how to easily apply a color overlay on an image HTML element (or not).
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
